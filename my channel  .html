@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AruuKiDuniya</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: white;
+      /* background-color: black; */
+    }
+    
+
+    nav {
+      text-align: right;
+      padding: 15px 20px;
+      font-size: 18px;
+      position: sticky;
+      top: 0;
+      background-color: black;
+    }
+
+    nav a {
+      color: purple;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 20px;
+  text-align: center;
+  color: yellowgreen;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('assets/photo2.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+    
+
+    .hero h1 {
+      font-size: 66px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      background-color:yellowgreen
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .hero p {
+      color: #f0f8ff;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.8;
+      max-width: 900px;
+      /* background-color: rgba(0, 0, 0, 0.4); */
+      padding: 20px;
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    h2 {
+      padding-left: 20px;
+      margin-top: 40px;
+    }
+
+    .photo-section {
+      background-image: url('assets/download.png');
+      /* filter: blur(8px); */
+      background-size: cover;
+      background-position: center;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .photo-section table {
+      margin: 0 auto;
+    }
+
+    .photo-section img {
+      width: 200px;
+      margin: 10px;
+      border-radius: 5px;
+    }
+
+    .video-section {
+  position: relative;
+  text-align: center;
+  margin-top: 40px;
+  padding: 60px 20px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.video-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('assets/photo14.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+.video-section h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+iframe {
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+  max-width: 90%;
+}
+
+
+    .about {
+  position: relative;
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  margin: 40px 20px;
+  border-radius: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  font-size: 16px;
+  color:black;
+
+  /* Create blur background using pseudo-element */
+  background-color: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('assets/photo 18.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      background-color: #222;
+      color:white;
+    }
+
+    a {
+      word-break: break-word;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#photo">Photo</a> |
+    <a href="#video">Video</a> |
+    <a href="#about">About Us</a>
+  </nav>
+
+  <!-- Hero Section (unchanged) -->
+<div class="hero">
+  <h1>Welcome to AruuKiDuniya</h1><br>
+  <br><p style="color:white;">
+   
+    
+</div>
+
+
+
+  <!-- Photo Section -->
+  <div id="photo" class="photo-section">
+    <h2 style="color: purple;">Photo Gallery</h2>
+    <table cellpadding="10">
+      <tr>
+        <td><img src="assets/photo5.jpeg" alt=""></td>
+        <td><img src="assets/photo12 (2).jpeg" alt=""></td>
+        <td><img src="assets/photo12 (5).jpeg" alt=""></td>
+      </tr>
+      <tr>
+        <td><img src="assets/photo4.jpeg" alt=""></td>
+        <td><img src="assets/photo12 ().jpeg" alt=""></td>
+        <td><img src="assets/photo6.jpeg" alt=""></td>
+      </tr>
+      <tr>
+        <td><img src="assets/photo7.jpeg" alt=""></td>
+        <td><img src="assets/photo8.jpeg" alt=""></td>
+        <td><img src="assets/photo12 (8).jpeg" alt=""></td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Video Section -->
+ <!-- Video Section -->
+<div id="video" class="video-section">
+  <h2 style="text-align: center;">My Dance & Fun Videos 🎥</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+
+    <!-- Local Video 1 -->
+    <video width="250" controls>
+      <source src="assets/video (2).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Local Video 2 -->
+    
+
+    <!-- Local Video 3 -->
+    <video width="250" controls>
+      <source src="assets/video (3).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Local Video 4 -->
+    
+    <!-- YouTube Video 1 -->
+    <iframe width="315" height="565"
+      src="https://www.youtube.com/embed/OUwB8SsFXdo"
+      title="Knock knock it's fest day"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+
+    <!-- YouTube Video 2 -->
+    <iframe width="315" height="560"
+      src="https://www.youtube.com/embed/d_QzKMToOUw"
+      title="Enjoying fest performance"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+<video width="200" controls>
+      <source src="assets/video (5).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video width="200" controls>
+      <source src="assets/video (1).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    
+
+    
+  </div>
+</div>
+
+
+
+  
+
+  <!-- About Us Section -->
+  h2 id="about" style="color: skyblue; text-align: center;">About Us</h2>
+
+<div class="about">
+  <h3>👋 Welcome to Aruu Ki Duniya</h3>
+  <p><strong>✨ Who am I?</strong><b>.</b>
+    <p style="color:white;"><b>Launched in February 2024, AruuKiDuniya is a vibrant and joyful YouTube channel with over 1.6K+ lovely subscribers. From fun videos and professional dance performances to mini vlogs and sweet family moments — it’s a happy place for everyone!
+Run by Aradhya Pandey, this channel is all about spreading positivity, passion, and personal growth. It shows how beautifully one can balance studies and creativity with love and dedication.</b></p>
+
+
+  <table style="width: 100%; color: white;">
+  <tr>
+    <!-- Left Side -->
+    <td style="vertical-align: top; width: 50%;">
+      <p style="color: white;"><b><strong>🎬 What You’ll Find on My Channel:</strong><br></p></b>
+       <p style="color:white";> <b>• Dance performances 💃<br>
+        • Reels & Shorts 🎥<br>
+        • Music, masti & meaningful vlogs 🎶<br>
+        • Pure entertainment & smiles 😄
+      </b></p><br> <b><p><strong>🌟 About Me:</strong><br></p>
+       <p style="color:white"> • #DanceLover ❤️💕<br>
+        • #ReelsAddiction 😁🎉<br>
+        • #YoutuberAradhyaPandey 💕❤️<br>
+        • Phone Verified ☑️
+        • 7488......
+    </b>
+      </p>
+    </td>
+
+    <!-- Right Side -->
+    <td style="vertical-align: top; width: 50%;">
+      <p><b><strong>🧑‍💻 Aradhya Pandey</strong><br></p>
+       <p style="color:white"> <em>" Always stay positive 💕💕"</em><br>
+        <em>"Some days are just better than others ❤️❤️"</em><br>
+        <em>"If your mom supports you, you’re truly blessed – and I am 💞😁🎉❤️"</em>
+      </p><br></b>
+<p><b><strong>🔗 Channel Info:</strong><br></p>
+        <p style="color: white;" >Channel: <strong>Aruu Ki Duniya</strong><br>
+        • Started: <strong>Feb 28, 2024</strong><br>
+        • Subscribers: <strong>1.6K+</strong><br>
+        • Videos: <strong>130+</strong><br>
+        • Views: <strong>51,726+</strong>
+        </b>
+      </p>
+    </td>
+  </tr>
+</table>
+
+
+
+
+
+  <p><b>💃🎬✨ Come join the journey — Like, Share & Subscribe!</b></p> ❤️</p>
+
+  <p><strong>📺 Visit my YouTube Channel:</strong><br>
+ <b> <a href="https://youtube.com/@aruukiduniya?si=7HPwCKQLPJfB3rKE" target="_blank" style="color: black;">www.youtube.com/@AruuKiDuniya</a></p></b>
+
+ <b> <p style="color: black"><strong>Thank you for the love and support! 💃🎶✨</strong></p></b>
+</div>
+
+<div style="position: relative; overflow: hidden;">
+
+  <!-- Blurred Background Image -->
+  <div style="
+    background-image: url('assets/photo12 (6).jpeg'); 
+    background-size: cover; 
+    background-position: center;
+    filter: blur(3px);
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    z-index: 0;
+  "></div>
+
+  <!-- Video Content -->
+  <div style="
+    position: relative; 
+    z-index: 1; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    gap: 40px; 
+    padding: 40px 20px; 
+    color: white;
+  ">
+    <!-- Recommended Videos -->
+    <div style="flex: 1; min-width: 300px;">
+      <h2 style="color: hotpink;">🔥 Recommended Videos</h2>
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/Pz-DEHhEtAY" allowfullscreen></iframe><br><br>
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/15U8i0UaeE8" allowfullscreen></iframe><br><br>
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/O7fwMArZ8JI" allowfullscreen></iframe>
+    </div>
+
+    <!-- Oldest Videos -->
+    <div style="flex: 1; min-width: 300px;">
+      <h2 style="color: lightblue;">📼 Oldest Videos</h2>
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/2NzkIjFk464" allowfullscreen></iframe><br><br>
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/hOIZ5Xfglb0" allowfullscreen></iframe><br><br>
+    </div>
+  </div>
+</div>
+
+<!-- NEW: Video Highlights Section -->
+ 
+<div style="position: relative; overflow: hidden;">
+
+ 
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 AruuKiDuniya | All rights reserved</p>
+    <p><a href="https://youtube.com/@aruukiduniya" style="color: #aaa;">https://youtube.com/@aruukiduniya</a></p>
+  </footer>
+
+</body>
+</html>
