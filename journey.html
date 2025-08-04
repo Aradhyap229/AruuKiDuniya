@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aruu Ki Duniya</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #f9f5f5;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+   header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; 
+  padding: 0;
+  background: url('assets/photo2.jpg.jpeg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #f9f3f3;
+  text-align: center;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 0;
+}
+.nav-icon {
+  width: 20px;
+  height: auto;      
+  vertical-align: middle;  
+  margin-right: 5px; 
+}
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    section {
+      position: relative;
+      padding: 60px 20px;
+      margin: 20px 0;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: #fff;
+    }
+
+    section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 0;
+    }
+
+    section > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .photo-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-image: url('assets/photo 18 (2).jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+.photo-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 0;
+}
+
+.nav-icon {
+  width: 20px;
+  height: auto;      
+  vertical-align: middle;  
+  margin-right: 2px; 
+}
+
+ .video-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-image: url('assets/photo14.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 30vh;
+  color: white; 
+}
+
+
+.video-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); 
+  z-index: 0;
+}
+
+.video-section > * {
+  position: relative;
+  z-index: 1; 
+}
+
+.nav-icon {
+  width: 60px;
+  height: auto;      
+  vertical-align: middle;  
+  margin-right: 0px; 
+}
+
+
+   
+
+   
+
+ .about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px20px;
+  background-image: url('assets/aruu1.jpeg');
+  background-position: center;
+  background-size: 80% auto; 
+  background-repeat: no-repeat;
+  background-color: black;  
+  min-height: 100vh;
+  position: relative;
+}
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0,0.3); 
+  z-index: 0;
+}
+
+.about-section > * {
+  position: relative;
+  z-index: 1; 
+}
+
+.nav-icon {
+  width: 10px;
+  height: auto;      
+  vertical-align: middle;  
+  margin-right: 2px; }
+
+
+
+
+
+  .recommended-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-image: url('assets/photo21.jpeg'); 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+
+.recommended-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);  
+  z-index: 0;
+}
+
+.recommended-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.recommendations-content {
+  display: flex;
+  flex-direction: row;    
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  gap: 300px;
+}
+
+.video-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.video-column iframe {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.nav-icon {
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.gallery, .videos, .recommendations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+    .gallery img,  video {
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    }
+
+    .videos iframe, .recommendations iframe {
+      width: 350px;
+      height: 200px;
+      border-radius: 15px;
+    }
+
+    .photo-buttons, .video-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .photo-buttons a, .video-buttons a {
+      background-color: rgb(10, 9, 9);
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .photo-buttons a:hover, .video-buttons a:hover {
+      background-color: #222021e1;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">
+  <img src="assets/home image.png" alt="Home" class="nav-icon"> Home 
+</a>
+
+    <a href="#photos">
+       <img src="assets/pic 5.webp" alt="photo" class="nav-icon"> Photos
+
+    </a>
+    <a href="#videos">
+       <img src="assets/vid.webp" alt="video" class="nav-icon"> Videos
+    </a>
+    <a href="#recommendations">
+       <img src="assets/recomm.png" alt="recommendations" class="nav-icon"> Recommendations
+    </a>
+    <a href="#about">
+    <img src="assets/us us.png" alt=" about" class="nav-icon">  About</a>
+  </nav>
+
+  <!-- Home Section -->
+  <header id="home">
+    <h1>Aruu Ki Duniya</h1>
+    <p>Your daily dose of fun, dance & creativity!</p>
+    <p>Aradhya Pandey, passionate YouTuber and creator of Aruu Ki Duniya, sharing dance, reels, and joyful positive vibes daily</p>
+  </header>
+
+  <!-- Photo Section -->
+  <section id="photos" class="photo-section">
+    <h2 class="section-title">Photo Gallery</h2>
+    <div class="photo-buttons">
+      <a href="#photo1">Photo 1</a>
+      <a href="#photo2">Photo 2</a>
+      <a href="#photo3">Photo 3</a>
+      <a href="#photo4">Photo 4</a>
+      <a href="#photo5">Photo 5</a>
+      <a href="#photo6">Photo 6</a>
+     
+    </div>
+    <div class="gallery">
+      <img id="photo1" src="assets/photo1.jpeg" alt="Photo 1">
+      <img id="photo2" src="assets/photo13.jpeg" alt="Photo 2">
+      
+      <img id="photo3" src="assets/photo4.jpeg" alt="Photo 4">
+      <img id="photo4" src="assets/photo5.jpeg" alt="Photo 5">
+      <img id="photo5" src="assets/photo6.jpeg" alt="Photo 6">
+      <img id="photo6" src="assets/photo7.jpeg" alt="Photo 7">
+     
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section id="videos" class="video-section">
+    <h2 class="section-title">Videos</h2>
+    <div class="video-buttons">
+      <a href="#video1">Video 1</a>
+      <a href="#video2">Video 2</a>
+      <a href="#video3">Video 3</a>
+      <a href="#video4">Video 4</a>
+      <a href="#video5">Video 5</a>
+      <a href="#video6">Video 6</a>
+     
+   </div>
+    <div class="videos">
+  <section class="video-caption-section">
+    <iframe id="video1" src="assets/video (2).mp4" frameborder="0" allowfullscreen></iframe>
+    <p class="video-caption">my cuteeeee! 💃✨</p>
+  </section>
+</div>
+<section class="video-caption-section">
+      <iframe id="video2" src="https://www.youtube.com/embed/OUwB8SsFXdo" frameborder="0" allowfullscreen></iframe><br>
+<p class="video-caption"> festmood💃✨</p>
+</section>
+</div>
+<div  class="videos">
+  <section class="video-caption-section">
+    <iframe id="video4" src="assets/video (3).mp4" frameborder="0" allowfullscreen></iframe>
+    <p class="video-caption">maaf krna💃✨</p>
+  </section>
+</div>
+ <section>
+      <iframe id="video5" src="https://www.youtube.com/embed/d_QzKMToOUw" frameborder="0" allowfullscreen></iframe><br>
+      <p class="video-caption">tere liye💃✨</p>
+      </section>
+      
+     <section>
+   <iframe id="video6" src="assets/video (5).mp4" frameborder="0" allowfullscreen></iframe>
+   <p class="video-caption"> MyWorld💃MyLove✨💃</p>
+   </section>
+</div>
+  </section>
+
+  
+
+ <div class="recommended-section">
+  <h2 class="section-title">📺 Watch More from Aruu Ki Duniya</h2>
+  <div class="recommendations-content">
+
+    <!-- Recommended Videos (Left Side) -->
+    <div class="video-column">
+      <h3 style="color: rgb(247, 239, 247);">🔥 Recommended Videos</h3>
+      <iframe src="https://www.youtube.com/embed/Pz-DEHhEtAY" allowfullscreen></iframe><br><br>
+      <iframe src="https://www.youtube.com/embed/15U8i0UaeE8" allowfullscreen></iframe><br><br>
+      <iframe src="https://www.youtube.com/embed/O7fwMArZ8JI" allowfullscreen></iframe><br><br>
+    </div>
+
+    <!-- Oldest Videos (Right Side) -->
+    <div class="video-column">
+      <h3 style="color: rgb(246, 242, 242);">📼 Oldest Videos</h3>
+      <iframe src="https://www.youtube.com/embed/2NzkIjFk464" allowfullscreen></iframe><br><br>
+      <iframe src="https://www.youtube.com/embed/hOIZ5Xfglb0" allowfullscreen></iframe><br><br>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2 class="section-title">About Me</h2>
+    <p style="text-align: center;">Aruu Ki Duniya — By Aradhya Pandey.</p>
+
+<p>   &nbsp;      &nbsp;   &nbsp;  &nbsp;      &nbsp;   &nbsp Welcome to Aruu Ki Duniya, the official YouTube channel of Aradhya Pandey, a passionate dancer, content creator, and joyful personality.<br> Launched in February 2024, Aradhya’s creative journey has grown into a vibrant community of 1,600+ subscribers, sharing 134+ reels, dance videos, and spreading smiles through 51,900+ views. <br>With a love for music , nature , and a positive outlook, Aradhya creates content that connects with hearts. Her channel reflects dedication, creativity, and happy vibes every day.
+
+
+</p>
+<style>
+  .compact-text {
+    max-width: 100px;  
+    font-size: 14px;  
+    line-height: 1.2;  
+    margin: 0 auto;    
+    padding: 10px;     
+  }
+</style><br>
+<p><b>🔗 Subscribe & Join the Fun: www.youtube.com/@AruuKiDuniya!!></b></p>
+  </section>
+
+  <footer>
+    
+    &copy; 2025 Aruu Ki Duniya | http://www.youtube.com/@AruuKiDuniya |All Rights Reserved.
+  </footer>
+
+</body>
+</html>
